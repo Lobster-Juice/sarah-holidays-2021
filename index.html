@@ -29,9 +29,9 @@
       }
     </style>
     <script>
-      var greettext = ['T', 'o', ' ', 'S', 'a', 'r', 'a', 'h', ' ', 'Z', 'h', 'o', 'u'];
-      var bodytext = ['H', 'a', 'v', 'e', ' ', 'a', ' ', 'M', 'e', 'r', 'r', 'y', ' ', 'C', 'h', 'r', 'i', 's', 't', 'm', 'a', 's', ' ', 'a', 'n', 'd', ' ', 'a', ' ', 'H', 'a', 'p', 'p', 'y', ' ', 'N', 'e', 'w', ' ', 'Y', 'e', 'a', 'r', '!'];
-      var myname = ['D', 'o', 'n', 'a', 'l', 'd', ' ', 'L', 'i'];
+      greettext = ['T', 'o', ' ', 'S', 'a', 'r', 'a', 'h', ' ', 'Z', 'h', 'o', 'u'];
+      bodytext = ['H', 'a', 'v', 'e', ' ', 'a', ' ', 'M', 'e', 'r', 'r', 'y', ' ', 'C', 'h', 'r', 'i', 's', 't', 'm', 'a', 's', ' ', 'a', 'n', 'd', ' ', 'a', ' ', 'H', 'a', 'p', 'p', 'y', ' ', 'N', 'e', 'w', ' ', 'Y', 'e', 'a', 'r', '!'];
+      myname = ['D', 'o', 'n', 'a', 'l', 'd', ' ', 'L', 'i'];
       for (var i = 0; i < greettext.length; i ++) {
         setTimeout(
           function() {
@@ -42,14 +42,14 @@
       for (var j = 0; j < bodytext.length; j ++) {
         setTimeout(
           function() {
-            document.getElementById('body').innerHTML += bodytext[i];
+            document.getElementById('body').innerHTML += bodytext[j];
           },
         50 * i + 650)
       }
       for (var k = 0; k < myname.length; k ++) {
         setTimeout(
           function() {
-            document.getElementById('name').innerHTML += myname[i];
+            document.getElementById('name').innerHTML += myname[k];
           },
         50 * i + 2850)
       }
