@@ -23,15 +23,42 @@
         font-family: Google, sans-serif;
         font-size: 3em;
       }
-      #ending {
+      #name {
         font-family: Signature, cursive;
         font-size: 3em;
       }
     </style>
+    <script>
+      var greettext = ['T', 'o', ' ', 'S', 'a', 'r', 'a', 'h', ' ', 'Z', 'h', 'o', 'u'];
+      var bodytext = ['H', 'a', 'v', 'e', ' ', 'a', ' ', 'M', 'e', 'r', 'r', 'y', ' ', 'C', 'h', 'r', 'i', 's', 't', 'm', 'a', 's', ' ', 'a', 'n', 'd', ' ', 'a', ' ', 'H', 'a', 'p', 'p', 'y', ' ', 'N', 'e', 'w', ' ', 'Y', 'e', 'a', 'r', '!'];
+      var myname = ['D', 'o', 'n', 'a', 'l', 'd', ' ', 'L', 'i'];
+      for (var i = 0; i < greettext.length; i ++) {
+        setTimeout(
+          function() {
+            document.getElementById('greet').innerHTML += greettext[i];
+          },
+        5 * i)
+      }
+      for (var i = 0; i < bodytext.length; i ++) {
+        setTimeout(
+          function() {
+            document.getElementById('body').innerHTML += bodytext[i];
+          },
+        5 * i + 65)
+      }
+      for (var i = 0; i < myname.length; i ++) {
+        setTimeout(
+          function() {
+            document.getElementById('name').innerHTML += myname[i];
+          },
+        5 * i + 285)
+      }
+    </script>
   </head>
   <body>
+    <noscript>Please turn on JavaScript.</noscript>
     <p id="greet"></p>
     <p id="body"></p>
-    <p id="ending"></p>
+    <p id="name"></p>
   </body>
 </html>
